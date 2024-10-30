@@ -22,6 +22,7 @@ Explore the distribution of specific features.
 Gain insights into the dataset through visualizations
 _____________
 
+**Steps**
 
 1. Data Loading
 The dataset is loaded with Pandas for easy handling:

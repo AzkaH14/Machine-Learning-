@@ -1,6 +1,6 @@
 # Machine-Learning-
-______________________
-##Automobile Data Analysis
+---------------
+Automobile Data Analysis
 Setup and Requirements
 This project requires the following libraries:
 
@@ -20,7 +20,7 @@ The main objectives of this analysis are to:
 Clean the data by handling missing values and inconsistent entries.
 Explore the distribution of specific features.
 Gain insights into the dataset through visualizations
-__________
+--------------
 
 
 1. Data Loading

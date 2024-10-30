@@ -1,6 +1,6 @@
 # Machine-Learning-
-
-**Automobile Data Analysis**
+______________________
+##**Automobile Data Analysis**
 Setup and Requirements
 This project requires the following libraries:
 
@@ -20,6 +20,7 @@ The main objectives of this analysis are to:
 Clean the data by handling missing values and inconsistent entries.
 Explore the distribution of specific features.
 Gain insights into the dataset through visualizations
+__________
 
 
 1. Data Loading
@@ -31,25 +32,25 @@ data_frame = pd.read_csv('path/to/Automobile_data.csv')
 Duplicate Detection: 
 data_frame.duplicated()
 
-Standardizing Missing Values: Replaced missing values, represented by ?, with NaN for consistent handling.
+3.Standardizing Missing Values: Replaced missing values, represented by ?, with NaN for consistent handling.
 data_frame.replace('?', np.nan, inplace=True)
 
 
-Data Type Conversion: Converted the normalized-losses column to numeric to enable accurate calculations.
+4.Data Type Conversion: Converted the normalized-losses column to numeric to enable accurate calculations.
 data_frame['normalized-losses'] = pd.to_numeric(data_frame['normalized-losses'])
 
 
-Imputation of Missing Values: Filled missing values in normalized-losses with the mean to reduce skewed data distribution.
+5.Imputation of Missing Values: Filled missing values in normalized-losses with the mean to reduce skewed data distribution.
 mean_normalized_losses = data_frame['normalized-losses'].mean()
 data_frame['normalized-losses'].fillna(mean_normalized_losses, inplace=True)
 
 
-3. Data Analysis and Visualization
+5. Data Analysis and Visualization
 Box Plot for Outliers: Created a box plot for normalized-losses to spot any outliers.
 sns.boxplot(x=data_frame['normalized-losses'])
 
 
-Distribution of Symboling: Analyzed the distribution of symboling values to gain insights into risk factor ratings.
+6.Distribution of Symboling: Analyzed the distribution of symboling values to gain insights into risk factor ratings.
 sns.histplot(data_frame['symboling'])
 
 

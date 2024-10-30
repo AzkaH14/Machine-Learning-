@@ -1,6 +1,6 @@
 # Machine-Learning-
 ______________________
-##**Automobile Data Analysis**
+##Automobile Data Analysis
 Setup and Requirements
 This project requires the following libraries:
 
@@ -45,12 +45,12 @@ mean_normalized_losses = data_frame['normalized-losses'].mean()
 data_frame['normalized-losses'].fillna(mean_normalized_losses, inplace=True)
 
 
-5. Data Analysis and Visualization
+6. Data Analysis and Visualization
 Box Plot for Outliers: Created a box plot for normalized-losses to spot any outliers.
 sns.boxplot(x=data_frame['normalized-losses'])
 
 
-6.Distribution of Symboling: Analyzed the distribution of symboling values to gain insights into risk factor ratings.
+7.Distribution of Symboling: Analyzed the distribution of symboling values to gain insights into risk factor ratings.
 sns.histplot(data_frame['symboling'])
 
 
